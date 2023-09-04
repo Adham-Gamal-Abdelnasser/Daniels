@@ -1,0 +1,220 @@
+/* ========== S T A N D A R D S ========== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.doma {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+  }
+  .doma a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .doma img {
+    width: 100%;
+  }
+  .popup {
+    background-color: white;
+      color: var(--most-common);
+      padding: 2px;
+      border-radius: 2px;
+      cursor: pointer;
+      position: fixed;
+      bottom: 55px;
+      right: 56.8px;
+      opacity: 0;
+      transition: 0.5s;
+      z-index: 5;
+  }
+  .popup:hover {
+    opacity: 1;
+  }
+/* ========== H E A D E R ========== */
+.home {
+    background-image: url("../img/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    color: white !important;
+}
+.home .layer {
+    background-color: rgba(0,0,0,0.6);
+}
+.home .hed-content p {
+    font-size: clamp(1vw, 4vw,7vw);
+    font-weight: lighter;
+}
+.home .hed-content p::after {
+    content: "|";
+    left: 110%;
+    top: -5%;
+    animation: typing 5s linear infinite;
+    font-weight: bolder;
+}
+@keyframes typing {
+    0%{content: "|";}
+    2%{content: " |";}
+    4%{content: " L|";}
+    6%{content: " La|";}
+    8%{content: " Lar|";}
+    10%{content: " Larr|";}
+    12%{content: " Larry|";}
+    14%{content: " Larry |";}
+    16%{content: " Larry D|";}
+    18%{content: " Larry Da|";}
+    20%{content: " Larry Dan|";}
+    22%{content: " Larry Dani|";}
+    24%{content: " Larry Danie|";}
+    26%{content: " Larry Daniel|";}
+    28%{content: " Larry Daniels|";}
+    30%{content: " Larry Daniel|";}
+    32%{content: " Larry Danie|";}
+    34%{content: " Larry Dani|";}
+    36%{content: " Larry Dan|";}
+    38%{content: " Larry Da|";}
+    40%{content: " Larry D|";}
+    42%{content: " Larry |";}
+    44%{content: " Larry|";}
+    46%{content: " Larr|";}
+    48%{content: " Lar|";}
+    50%{content: " La|";}
+    52%{content: " L|";}
+    54%{content: " |";}
+    56%{content: "|";}
+    58%{content: " |";}
+    60%{content: " D|";}
+    62%{content: " De|";}
+    64%{content: " Dev|";}
+    66%{content: " Deve|";}
+    68%{content: " Devel|";}
+    70%{content: " Develo|";}
+    72%{content: " Develop|";}
+    74%{content: " Developer|";}
+    76%{content: " Develop|";}
+    78%{content: " Develo|";}
+    80%{content: " Devel|";}
+    82%{content: " Deve|";}
+    84%{content: " Dev|";}
+    86%{content: " De|";}
+    88%{content: " D|";}
+    95%{content: " |";}
+    100%{content: "|";}
+}
+
+.home .hed-icons a span {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/* ========== A B O U T ========== */
+
+.progress-shadow {
+    box-shadow: -2px 2px 8px 2px rgb(155, 155, 155) inset;
+}
+/* ========== S E R V I C E S ========== */
+.service span {
+    width: 70px;
+}
+.service:hover span {
+    background-color: black !important;
+    color: white;
+}
+/* ========== P O R T F O L I O ========== */
+.item .layer {
+    opacity: 0;
+    bottom: -5px;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    transition: 0.5s;
+}
+.item:hover .layer {
+    bottom: 5px;
+    opacity: 1;
+}
+.item .duo-icon , .item p {
+    transition: 0.5s;
+}
+.item:hover .duo-icon {
+    transform: translateY(-10px);
+}
+.item:hover p {
+    transform: translateY(10px);
+}
+.item div span:hover {
+    background-color: black;
+    color: white;
+}
+/* ========== T E S T I M O N I A L ========== */
+.client-img {
+    width: 50px;
+}
+.feedback img {
+    width: 90px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+/* ========== T E S T I M O N I A L ========== */
+.card div .overlay {
+    bottom: 5px;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    background-color: white;
+    transform: rotateY(180deg);
+    opacity: 0;
+    transition: 0.5s;
+}
+.card img ,.box{
+    transition: 0.5s;
+}
+.box:hover .overlay {
+    transform: rotateY(0deg);
+    opacity: 0.8;
+}
+.box:hover img {
+    transform: scale(1.2);
+}
+.card div .overlay span {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card div .overlay span:hover {
+    background-color: black;
+    color: white;
+}
+/* ========== C O N T A C T ========== */
+
+
+.contact .container .row span {
+    width: 70px;
+    height: 70px;
+    transition: 0.5s;
+}
+
+.contact .container .row div:hover span {
+    background-color: black !important;
+    color: white;
+}
